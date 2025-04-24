@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.UpdateTaskForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    width: 100%;
+    padding: 30px;
+    background: rgba(53, 51, 49, 0.9); /* Warm pastel background */
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(8px);
+  }
+  
+  .UpdateTaskForm:hover {
+    transform: scale(1.02);
+  }
+  
+  .UpdateTaskForm label {
+    font-weight: bold;
+    color: #ebdddd;
+  }
+  
+  .UpdateTaskForm input,
+  .UpdateTaskForm textarea {
+    padding: 12px;
+    border: 1px solid #3a3434;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .UpdateTaskForm input:focus,
+  .UpdateTaskForm textarea:focus {
+    border-color: #454241;
+    outline: none;
+    box-shadow: 0 0 8px rgba(94, 92, 91, 0.5);
+  }
+  
+  .UpdateTaskForm button {
+    background: linear-gradient(135deg, #555352, #4a4747);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+  }
+  

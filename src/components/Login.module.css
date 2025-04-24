@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+.loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 400px;
+    width: 100%;
+    padding: 30px;
+    background: whitesmoke;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    backdrop-filter: blur(10px);
+  }
+  
+  .loginForm:hover {
+    transform: scale(1.02);
+  }
+  
+  .loginForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: black;
+  }
+  
+  .loginForm input {
+    padding: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: all 0.3s;
+  }
+  
+  .loginForm input:focus {
+    border-color: black;
+    outline: none;
+    box-shadow: 0 0 8px rgba(30, 27, 28, 0.5);
+  }
+  
+  .loginForm input[type="submit"] {
+    background: linear-gradient(135deg, #413a3b, #41373b);
+    color: rgb(241, 232, 232);
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+    padding: 12px;
+    transition: all 0.3s ease;
+    border-radius: 6px;
+  }
+  
+  .loginForm input[type="submit"]:hover {
+    background: linear-gradient(135deg, #453e3e, #2e292a);
+    transform: scale(1.05);
+  }
+  

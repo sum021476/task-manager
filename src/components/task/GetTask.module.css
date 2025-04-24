@@ -1,0 +1,199 @@
+/* Reset & Layout */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  min-height: 100vh;
+  align-items: center;
+  position: relative;
+}
+
+/* Task Card */
+.card {
+  background: whitesmoke;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeIn 0.5s ease-in-out, floatCard 3s infinite alternate;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatCard {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-5px);
+  }
+}
+
+.card:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Card Text */
+.card h3 {
+  color: #151616;
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.card h4 {
+  color: #292c2c;
+  font-size: 16px;
+  margin-bottom: 15px;
+  padding: 3px;
+  word-wrap: break-word;
+  overflow-y: auto;
+  max-height: 100px;
+}
+
+/* Hide scrollbar */
+.card h4::-webkit-scrollbar {
+  display: none;
+}
+
+/* Button Container */
+.buttonContainer {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Buttons */
+.updateBtn, .deleteBtn {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+/* Update Button */
+.updateBtn {
+  background: linear-gradient(135deg, #242525, #404142);
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.updateBtn:hover {
+  background: linear-gradient(135deg, #565a5a, #030a0c);
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Delete Button */
+.deleteBtn {
+  background: linear-gradient(135deg, #302e2e, #292728);
+  color: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.deleteBtn:hover {
+  background: linear-gradient(135deg, #2c2b2b, #191718);
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Floating Action Buttons */
+.actionButtons {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Add Button */
+.addBtn {
+  background: #252525;
+  color: white;
+  font-size: 24px;
+  border: none;
+  padding: 15px 20px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.addBtn:hover {
+  background: #0d0d0d;
+  transform: scale(1.1);
+}
+
+/* Logout Button - Centered at Bottom */
+.logoutContainer {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+/* Logout Button */
+.logoutBtn {
+  background: black;
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.logoutBtn:hover {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .mainContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card {
+    width: 90%;
+  }
+  .actionButtons {
+    bottom: 15px;
+    right: 15px;
+  }
+  .logoutContainer {
+    bottom: 15px;
+  }
+}

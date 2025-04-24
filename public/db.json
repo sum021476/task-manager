@@ -1,0 +1,86 @@
+{
+  "users": [
+    {
+      "id": "888d",
+      "email": "sumanthvadlamani@gmail.com",
+      "password": "12345",
+      "gender": "male",
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "core java"
+      ]
+    },
+    {
+      "id": "07a3",
+      "email": "sumanthvadlamani@gmail.com",
+      "password": "12345",
+      "gender": "male",
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "core java"
+      ]
+    },
+    {
+      "id": "5956",
+      "email": "sumanthvadlamani@gmail.com",
+      "password": "12345",
+      "gender": "male",
+      "skills": [
+        "html",
+        "css",
+        "javascript",
+        "react",
+        "core java"
+      ]
+    }
+  ],
+  "task": [
+    {
+      "title": " react task",
+      "content": "I am sumanth doing this task",
+      "userid": "b794",
+      "id": "d655"
+    },
+    {
+      "title": "sumanth",
+      "content": "sumanth doing this react project",
+      "userid": "b794",
+      "id": "77c5"
+    },
+    {
+      "id": "510f",
+      "title": "sumanth",
+      "content": "hi i am doing this project",
+      "userid": "f0b0"
+    },
+    {
+      "id": "867d",
+      "title": "hi hello ",
+      "content": "namaste",
+      "userid": "bc62"
+    },
+    {
+      "id": "b414",
+      "title": "hi",
+      "content": "hello",
+      "userid": "888d"
+    },
+    {
+      "id": "6192",
+      "title": "namste",
+      "content": "i am here to do coding",
+      "userid": "888d"
+    },
+    {
+      "title": "sumanth",
+      "content": "vadlamani ji",
+      "id": "8d28"
+    }
+  ]
+}
